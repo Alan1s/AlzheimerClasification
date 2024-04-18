@@ -6,8 +6,8 @@ Alanis Forero Salas
 
 Objetivos:
   Clustering: Aplicar un metodo de clustering con el tema "Mental Health" y realizar el clustering de las regiones basado en las respuestas a las preguntas relacionadas con este tema.
-18 de abril de 2024
 Regresion: Predecir el valor del estrés mental frecuente basado en otros variables de entrada
+18 de abril de 2024
 
 Resumen de datos:
 
