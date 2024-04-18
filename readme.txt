@@ -5,11 +5,9 @@ Juan Buitrago
 Alanis Forero Salas
 
 Objetivos:
-  Clustering: Usar técnicas de clustering para identificar grupos de estados o regiones similares basados en métricas de salud específicas
-  Regresion: Entender las relaciones entre diferentess factores y el resultado de salud en los datos
-  Clasificación supervisada: Predecir un resultado de salud categórico basado en un conjunto de predictores.
-
+  Clustering: Aplicar un metodo de clustering con el tema "Mental Health" y realizar el clustering de las regiones basado en las respuestas a las preguntas relacionadas con este tema.
 18 de abril de 2024
+Regresion: Predecir el valor del estrés mental frecuente basado en otros variables de entrada
 
 Resumen de datos:
 
@@ -19,36 +17,38 @@ Resumen de datos:
 - Notas al Pie y Símbolos: Hay símbolos y notas al pie en algunas columnas como Data_Value_Footnote_Symbol y Data_Value_Footnote, los cuales parecen indicar aspectos importantes sobre la calidad o la interpretación de los datos que no deben ser ignorados.
 - Estratificación: Las columnas que empiezan con Stratification  muestran cómo se segmentan los datos, por ejemplo, por grupo de edad, raza/etnia o género.
 
-RowId                          object
-YearStart                       int64
-YearEnd                         int64
-LocationAbbr                   object
-LocationDesc                   object
-Datasource                     object
-Class                          object
-Topic                          object
-Question                       object
-Data_Value_Unit                object
-DataValueTypeID                object
-Data_Value_Type                object
-Data_Value                    float64
-Data_Value_Alt                float64
-Data_Value_Footnote_Symbol     object
-Data_Value_Footnote            object
-Low_Confidence_Limit          float64
-High_Confidence_Limit         float64
-StratificationCategory1        object
-Stratification1                object
-StratificationCategory2        object
-Stratification2                object
-Geolocation                    object
-ClassID                        object
-TopicID                        object
-QuestionID                     object
-LocationID                      int64
-StratificationCategoryID1      object
-StratificationID1              object
-StratificationCategoryID2      object
-StratificationID2              object
-LocationDesc_encoded             int8
-dtype: object
+Columna                         | Descripción
+--------------------------------|---------------------------------------------------------
+RowId                           | Identificador único para cada fila del conjunto de datos.
+YearStart                       | Año de inicio del periodo de recolección de datos.
+YearEnd                         | Año de fin del periodo de recolección de datos.
+LocationAbbr                    | Abreviatura del nombre de la ubicación geográfica (generalmente estados de EE.UU.).
+LocationDesc                    | Descripción completa de la ubicación geográfica.
+Datasource                      | Fuente de los datos recogidos.
+Class                           | Clasificación general del tipo de datos recogidos (por ejemplo, información de salud).
+Topic                           | Tema específico del conjunto de datos (por ejemplo, salud mental).
+Question                        | Pregunta específica a la que responden los datos.
+Data_Value_Unit                 | Unidad de medida del valor de los datos (por ejemplo, porcentaje).
+DataValueTypeID                 | Identificador del tipo de valor de datos.
+Data_Value_Type                 | Tipo de valor de datos (por ejemplo, promedio).
+Data_Value                      | Valor numérico concreto de la respuesta.
+Data_Value_Alt                  | Valor alternativo o adicional relacionado con `Data_Value`.
+Data_Value_Footnote_Symbol      | Símbolo utilizado para anotaciones a pie de página en los valores de datos.
+Data_Value_Footnote             | Texto explicativo asociado a una anotación a pie de página.
+Low_Confidence_Limit            | Límite inferior del intervalo de confianza para el valor de los datos.
+High_Confidence_Limit           | Límite superior del intervalo de confianza para el valor de los datos.
+StratificationCategory1         | Primera categoría de estratificación de los datos (por ejemplo, edad).
+Stratification1                 | Detalle específico dentro de la primera categoría de estratificación.
+StratificationCategory2         | Segunda categoría de estratificación de los datos, si aplica.
+Stratification2                 | Detalle específico dentro de la segunda categoría de estratificación.
+Geolocation                     | Datos de geolocalización asociados a la ubicación.
+ClassID                         | Identificador de la clasificación de los datos.
+TopicID                         | Identificador del tema del conjunto de datos.
+QuestionID                      | Identificador de la pregunta específica dentro del conjunto de datos.
+LocationID                      | Identificador numérico único para cada ubicación.
+StratificationCategoryID1       | Identificador para la primera categoría de estratificación.
+StratificationID1               | Identificador para el detalle específico dentro de la primera categoría de estratificación.
+StratificationCategoryID2       | Identificador para la segunda categoría de estratificación, si aplica.
+StratificationID2               | Identificador para el detalle específico dentro de la segunda categoría de estratificación.
+LocationDesc_encoded            | Código numérico que representa la ubicación descripción de forma codificada.
+--------------------------------|---------------------------------------------------------
