@@ -19,3 +19,36 @@ Resumen de datos:
 - Notas al Pie y Símbolos: Hay símbolos y notas al pie en algunas columnas como Data_Value_Footnote_Symbol y Data_Value_Footnote, los cuales parecen indicar aspectos importantes sobre la calidad o la interpretación de los datos que no deben ser ignorados.
 - Estratificación: Las columnas que empiezan con Stratification  muestran cómo se segmentan los datos, por ejemplo, por grupo de edad, raza/etnia o género.
 
+RowId                          object
+YearStart                       int64
+YearEnd                         int64
+LocationAbbr                   object
+LocationDesc                   object
+Datasource                     object
+Class                          object
+Topic                          object
+Question                       object
+Data_Value_Unit                object
+DataValueTypeID                object
+Data_Value_Type                object
+Data_Value                    float64
+Data_Value_Alt                float64
+Data_Value_Footnote_Symbol     object
+Data_Value_Footnote            object
+Low_Confidence_Limit          float64
+High_Confidence_Limit         float64
+StratificationCategory1        object
+Stratification1                object
+StratificationCategory2        object
+Stratification2                object
+Geolocation                    object
+ClassID                        object
+TopicID                        object
+QuestionID                     object
+LocationID                      int64
+StratificationCategoryID1      object
+StratificationID1              object
+StratificationCategoryID2      object
+StratificationID2              object
+LocationDesc_encoded             int8
+dtype: object
