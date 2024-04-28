@@ -52,3 +52,25 @@ StratificationCategoryID2       | Identificador para la segunda categoría de es
 StratificationID2               | Identificador para el detalle específico dentro de la segunda categoría de estratificación.
 LocationDesc_encoded            | Código numérico que representa la ubicación descripción de forma codificada.
 --------------------------------|---------------------------------------------------------
+
+Limpieza
+RowId E
+Class E
+Topic E
+Question E
+LocationDesc E
+LocationAbbr E
+Data_Value_Type E
+StratificationCategory1 E
+Stratification1 E
+Stratification2 E
+StratificationCategory2 E
+Data_Value E
+Data_Value_Unit E
+
+Pasos importantes
+Lo primero es separar TODO en 80% y 20% ---> train1
+Luego, toca guardarlo en un csv
+En otro notebook:
+Separar el train.csv en 80% y 20% otra vez---> train2
+Luego hacer lo de las variables categoricas
